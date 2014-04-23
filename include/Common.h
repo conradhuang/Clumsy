@@ -1,0 +1,76 @@
+#ifndef __COMMON_H__
+#define __COMMON_H__
+
+#include "Types.h"
+
+const int8 RED_TURN = 1;
+const int8 BLK_TURN = -RED_TURN;
+const Pos INVALID_POS = -1;
+const uint8 BOARD_SIZE = 120;
+const uint8 COLUMNS_PER_ROW = 9;
+const uint8 ROWS_PER_COLUMN = 10;
+const uint32 MAX_SEARCH_DEPTH = 64;
+const int32 INFINITE = 32767;
+const uint32 MAX_KING_POS = 4;
+
+enum Chess
+{
+	NONE,
+	BLK_PAWN_1,
+	BLK_PAWN_2,
+	BLK_PAWN_3,
+	BLK_PAWN_4,
+	BLK_PAWN_5,
+	BLK_CANNON_1,
+	BLK_CANNON_2,
+	BLK_HORSE_1,
+	BLK_HORSE_2,
+	BLK_ROOK_1,
+	BLK_ROOK_2,
+	BLK_ELEPHANT_1,
+	BLK_ELEPHANT_2,
+	BLK_GUARD_1,
+	BLK_GUARD_2,
+	BLK_KING,
+	BOUNDARY,
+	RED_PAWN_1,
+	RED_PAWN_2,
+	RED_PAWN_3,
+	RED_PAWN_4,
+	RED_PAWN_5,
+	RED_CANNON_1,
+	RED_CANNON_2,
+	RED_HORSE_1,
+	RED_HORSE_2,
+	RED_ROOK_1,
+	RED_ROOK_2,
+	RED_ELEPHANT_1,
+	RED_ELEPHANT_2,
+	RED_GUARD_1,
+	RED_GUARD_2,
+	RED_KING,
+	MAX_CHESS
+};
+
+enum ChessType
+{
+	EMPTY,
+	BP,
+	BC,
+	BH,
+	BR,
+	BE,
+	BG,
+	BK,
+	BNDRY = 8,
+	RP,
+	RC,
+	RH,
+	RR,
+	RE,
+	RG,
+	RK,
+	MAX_CHESS_TYPE
+};
+
+#endif // ifndef __COMMON_H__

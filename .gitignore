@@ -1,0 +1,8 @@
+*.suo
+*.filters
+Debug/*
+Release/*
+proj/Debug/*
+proj/Release
+*.sdf
+*.opensdf

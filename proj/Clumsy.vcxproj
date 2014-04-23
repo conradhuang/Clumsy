@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0C86670-12B6-4BD5-87C3-7573EF560394}</ProjectGuid>
+    <RootNamespace>Clumsy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\AlphaBetaAlgorithm.h" />
+    <ClInclude Include="..\include\Board.h" />
+    <ClInclude Include="..\include\BoardNotation.h" />
+    <ClInclude Include="..\include\Cannon.h" />
+    <ClInclude Include="..\include\Common.h" />
+    <ClInclude Include="..\include\Display.h" />
+    <ClInclude Include="..\include\Elephant.h" />
+    <ClInclude Include="..\include\Evaluator.h" />
+    <ClInclude Include="..\include\Guard.h" />
+    <ClInclude Include="..\include\Horse.h" />
+    <ClInclude Include="..\include\King.h" />
+    <ClInclude Include="..\include\MinMaxAlgorithm.h" />
+    <ClInclude Include="..\include\MoveDirectionBlack.h" />
+    <ClInclude Include="..\include\MoveDirectionRed.h" />
+    <ClInclude Include="..\include\MoveGenerator.h" />
+    <ClInclude Include="..\include\Moves.h" />
+    <ClInclude Include="..\include\NegamaxAlgorithm.h" />
+    <ClInclude Include="..\include\Pawn.h" />
+    <ClInclude Include="..\include\Piece.h" />
+    <ClInclude Include="..\include\Rook.h" />
+    <ClInclude Include="..\include\SearchAlgorithm.h" />
+    <ClInclude Include="..\include\TranspositionTable.h" />
+    <ClInclude Include="..\include\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AlphaBetaAlgorithm.cpp" />
+    <ClCompile Include="..\src\Board.cpp" />
+    <ClCompile Include="..\src\BoardNotation.cpp" />
+    <ClCompile Include="..\src\Display.cpp" />
+    <ClCompile Include="..\src\Evaluator.cpp" />
+    <ClCompile Include="..\src\Horse.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\MinMaxAlgorithm.cpp" />
+    <ClCompile Include="..\src\MoveDirectionBlack.cpp" />
+    <ClCompile Include="..\src\MoveDirectionRed.cpp" />
+    <ClCompile Include="..\src\MoveGenerator.cpp" />
+    <ClCompile Include="..\src\Moves.cpp" />
+    <ClCompile Include="..\src\NegamaxAlgorithm.cpp" />
+    <ClCompile Include="..\src\SearchAlgorithm.cpp" />
+    <ClCompile Include="..\src\TranspositionTable.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
